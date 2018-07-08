@@ -1,0 +1,49 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+
+group = 'br.com.caelum.argentum'
+version = '1.0.0-SNAPSHOT'
+
+description = """"""
+
+sourceCompatibility = 1.5
+targetCompatibility = 1.85
+tasks.withType(JavaCompile) {
+	options.encoding = 'UTF-8'
+}
+
+
+
+repositories {
+    jcenter()
+	mavenCentral()
+	google()
+}
+
+dependencies {
+    
+	compile "com.sun.faces:jsf-api:2.2.6"
+	compile "com.sun.faces:jsf-impl:2.2.6"
+	compile "org.primefaces:primefaces:5.3"
+	compile "javax.servlet:javax.servlet-api:3.0.1"
+	compile "com.thoughtworks.xstream:xstream:1.2.2"
+	compile "junit:junit:4.9"
+	compile "org.mockito:mockito-all:1.10.19"
+	compile "org.seleniumhq.selenium:selenium-java:2.41.0"
+	compile "com.github.detro:phantomjsdriver:1.2.0"
+	compile "org.jboss.arquillian.junit:arquillian-junit-container:1.0.3.Final"
+	compile "org.jboss.shrinkwrap.resolver:shrinkwrap-resolver-api-maven:1.0.0-beta-6"
+	compile "org.jboss.arquillian.container:arquillian-tomcat-embedded-7:1.0.0.CR4"
+	compile "org.jboss.arquillian.container:arquillian-tomcat-common:1.0.0.CR4"
+	compile "org.apache.tomcat.embed:tomcat-embed-core:7.0.64"
+	compile "org.apache.tomcat.embed:tomcat-embed-jasper:7.0.64"
+	compile "org.apache.tomcat.embed:tomcat-embed-logging-juli:7.0.64"
+	compile "org.jboss.arquillian.junit:arquillian-junit-container:1.0.3.Final"
+	compile "org.jboss.shrinkwrap.resolver:shrinkwrap-resolver-impl-maven:1.0.0-beta-6"
+	compile "org.jboss.shrinkwrap.resolver:shrinkwrap-resolver-api-maven:1.0.0-beta-6"
+	compile "org.jboss.shrinkwrap.descriptors:shrinkwrap-descriptors-impl-javaee:2.0.0-alpha-5"
+	compile "org.jboss.arquillian.container:arquillian-container-spi:1.0.3.Final"
+	compile "org.jboss.arquillian.container:arquillian-container-test-spi:1.0.3.Final"
+	compile "org.jboss.arquillian.protocol:arquillian-protocol-servlet:1.0.3.Final"
+
+}
